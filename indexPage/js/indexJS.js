@@ -7,7 +7,7 @@ function adv(){
 window.onload=adv();
 var num=1;
 function changimg(){
-   $("#centertop2").css("background","url('../images/dd_scroll_"+num+".jpg')");
+   $("#centertop2").css("background","url('images/dd_scroll_"+num+".jpg')");
     $("[id=centertop] ul button").css("background","#FAFAFB");
     x=num-1;
     $("[id=centertop] ul button:eq('"+x+"')").css("background","#FD9B5D");
