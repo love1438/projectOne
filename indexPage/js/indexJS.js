@@ -32,7 +32,7 @@ $(function(){
         $("[id=centertop] ul button").css("background","#FAFAFB");
         $(this).css("background","#FD9B5D");
         $number=$(this).attr("value");
-        $("[id=centertop2]").css("background","url('indexPage/images/dd_scroll_"+$number+".jpg')")
+        $("[id=centertop2]").css("background","url('images/dd_scroll_"+$number+".jpg')")
     });
     $("[id=scroll] button").click(function(){
         $("#scroll").hide();
@@ -45,11 +45,11 @@ $(function(){
     });
     $("button[class=book]").mouseenter(function(){
         var index=$(this).parent('li').index();
-        $("button[class=book]").css("background","url('indexPage/images/dd_book_bg1.jpg')");
+        $("button[class=book]").css("background","url('images/dd_book_bg1.jpg')");
         for(var i=0;i<4;i++){
             $("#centermidbottom"+i).hide();
         }
-        $(this).css("background","url('indexPage/images/dd_book_bg2.jpg')");
+        $(this).css("background","url('images/dd_book_bg2.jpg')");
         $("#centermidbottom"+index).show();
     });
 });
